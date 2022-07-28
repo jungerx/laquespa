@@ -1,0 +1,98 @@
+@font-face {
+    font-family:UTM ;
+    src: url('../font/UTMFrenchVanilla.woff');
+}
+@font-face {
+    font-family:MontserratBold ;
+    src: url('../font/MontserratBold.woff');
+}
+@font-face {
+    font-family:MontserratMedium ;
+    src: url('../font/MontserratMedium.woff');
+}
+@font-face {
+    font-family:MontserratSemiBold ;
+    src: url('../font/MontserratSemiBold.woff');
+}
+@font-face {
+    font-family:MontserratRegular ;
+    src: url('../font/MontserratRegular.woff');
+}
+@font-face {
+    font-family:PlayfairDisplayBold ;
+    src: url('../font/PlayfairDisplayBold.woff');
+}
+@font-face {
+    font-family:PlayfairDisplayRegular ;
+    src: url('../font/PlayfairDisplayRegular.woff');
+}
+@font-face {
+    font-family:OpenSansBold ;
+    src: url('../font/OpenSansBold.woff');
+}
+:root{
+    scroll-behavior: smooth;
+}
+
+/*Reset margin top/bottom*/
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6,
+p, hr,span {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*Remove underline on link when hover*/
+a:hover {
+	text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+.heading{
+    font-family:MontserratSemiBold ;
+    font-size: 18px;
+    color: #391a0f;
+    text-transform: uppercase;
+}
+.sub-heading{
+    font-family:PlayfairDisplayBold ;
+    font-size: 30px;
+    color: #c27d24;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+.line-left{
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    top: 50%;
+    left: -85px;
+    background:linear-gradient(to right,#f7ede1, #c27d24) ;
+}
+.line-right{
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    top: 50%;
+    right: -85px;
+    background:linear-gradient(to left,#f7ede1, #c27d24) ;
+}
+.line-right.bg{
+    background:linear-gradient(to left,#381c0e, #c27d24) ; 
+}
+.line-left.bg{
+    background:linear-gradient(to right,#381c0e, #c27d24) ; 
+}
+
+
+
+
+@media only screen and (min-width : 1200px) {
+    .container-xl {
+    	max-width: 1230px !important;
+    }
+}
+
